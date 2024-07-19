@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: "EudoxusSans";
+    src: url(../src/font-family/EudoxusSans-Bold-BF659b6cb1408e5.ttf);
+}
+@font-face {
+    font-family: "EudoxusSans400";
+    src: url(../src/font-family/EudoxusSans-Regular-BF659b6cb1d4714.ttf);
+}
+
+.EudoxusSans {
+    font-family: "EudoxusSans";
+}
+.EudoxusSans2 {
+    font-family: "EudoxusSans400";
+}
+
+                :root {
+                    --volume-fill: 55%;
+                    /* Example value */
+                    --color-white: #C89E43;
+                    --color-yellow-primary: #FFFBAD;
+                    /* Adjust as needed */
+                }
+        
+                .custom-slider {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    max-width: 649.71px;
+                    width: 100%;
+                    height: 4px;
+                    border-radius: 20px;
+                    background: linear-gradient(to right, yellow var(--volume-fill), var(--color-white) var(--volume-fill));
+                    outline: none;
+                    opacity: 1;
+                    transition: opacity .2s;
+                    position: relative;
+                }
+        
+                .custom-slider::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 100%;
+                    background: #FFFBAD;
+                    cursor: pointer;
+                }
+        
+                .custom-slider::-moz-range-thumb {
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 100%;
+                    background: #FFFBAD;
+                    cursor: pointer;
+                }
+        
+                .custom-slider::-webkit-slider-runnable-track {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px;
+                    background: var(--color-white);
+                    background: linear-gradient(to right, var(--color-yellow-primary) var(--volume-fill), var(--color-white) var(--volume-fill));
+                }
+        
+                .custom-slider::-moz-range-track {
+                    width: 100%;
+                    height: 100%;
+                    background: var(--color-white);
+                    background: linear-gradient(to right, var(--color-yellow-primary) var(--volume-fill), var(--color-white) var(--volume-fill));
+                }

@@ -69,3 +69,7 @@ menuicon.addEventListener("click", function () {
     menuicon.classList.toggle("top-3");
     navbar.classList.toggle("fixed")
 });
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('menu-open');
+}

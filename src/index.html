@@ -31,19 +31,30 @@
             <img src="../src/img/webp/leftlayer.png" alt="" class="absolute top-0 start-0">
             <img src="../src/img/webp/leftlayer.png" alt="" class="absolute top-0 end-0 rotate-90">
             <div class="container relative z-[1]">
-                <div class="nav flex justify-between pt-[23px]">
-                    <img src="../src/img/svg/navlogo.svg" alt="" class="cursor-pointer ">
-                    <div class="flex flex-col justify-between w-7 h-6  menu-icon z-30 relative">
+                <div class="nav flex justify-between pt-[23px] w-full">
+                    <img src="../src/img/svg/navlogo.svg" alt="" class="cursor-pointer">
+                    <div class="flex flex-col justify-between w-7 h-6 menu-icon z-30 relative cursor-pointer"
+                        onclick="toggleMenu()">
                         <span
-                            class="flex bg-golden w-full h-1 rounded-sm md:  absolute top-0 line1 duration-300 ease-linear"></span>
+                            class="flex bg-golden w-full h-1 rounded-sm md:absolute top-0 line1 duration-300 ease-linear"></span>
                         <span
-                            class="flex bg-golden w-full h-1 rounded-sm md: absolute top-1/2 -translate-y-1/2 line-center duration-300 ease-linear"></span>
+                            class="flex bg-golden w-full h-1 rounded-sm md:absolute top-1/2 -translate-y-1/2 line-center duration-300 ease-linear"></span>
                         <span
-                            class="flex bg-golden w-full h-1 rounded-sm md: absolute bottom-0 line3 duration-300 ease-linear"></span>
+                            class="flex bg-golden w-full h-1 rounded-sm md:absolute bottom-0 line3 duration-300 ease-linear"></span>
                     </div>
-                    <ul
-                        class="menu-list flex items-center gap-8 fixed top-0 -right-full flex-col justify-center w-full min-h-screen bg-[linear-gradient(130.88deg,white,#4F91FC)]   duration-300 ease-linear">
+                    <ul id="menu"
+                        class="menu-list flex items-center gap-8 fixed top-0 -right-full flex-col justify-center w-1/2 min-h-screen  bg-black  duration-300 ease-linear">
+                        <li><a href="#join"
+                                class="font-bold text-[18px] EudoxusSans text-center text-golden link-hover">Join</a>
+                        </li>
+                        <li><a href="#faq"
+                                class="font-bold text-[18px] EudoxusSans text-center text-golden link-hover">FAQs</a>
+                        </li>
+
+                        <!-- <li><a href="" class=" font-bold text-[18px] EudoxusSans text-center text-golden">Join Now</a></li> -->
+                    </ul>
                 </div>
+
                 <div class="row flex flex-row flex-wrap -mx-3 mt-[64px] ">
                     <div class="col-6 lg:w-1/2 w-full px-3 flex flex-col justify-start lg:items-start items-center ">
                         <h2 class="text-white font-bold text-3xl leading-[51px] EudoxusSans text-center lg:text-left">
@@ -120,18 +131,18 @@
                 <div class="row flex flex-row flex-wrap -mx-3 mt-[64px]">
                     <div class="col-6  lg:w-1/2 w-full px-3 mt-6">
                         <div
-                            class="main min-h-[322px] h-full w-full pt-10 px-[34px] bg-[#13100D] border-[1px] border-[#FFFFFF1A] rounded-[20px] relative pb-5">
+                            class="main min-h-[322px] h-full w-full pt-10 px-[34px] bg-[#13100D] border-[1px] border-[#FFFFFF1A] rounded-[20px] relative pb-5 hover:border-[white] ">
                             <div class="flex justify-between items-center">
                                 <img src="../src/img/svg/doloor.svg" alt="">
-                                <h2 class="EudoxusSans2  text-white opacity-20 font-bold text-[55px] ">01</h2>
+                                <h2 class="EudoxusSans2 text-white opacity-20 font-bold text-[55px]">01</h2>
                             </div>
                             <img src="../src/img/webp/circle.png" alt="" class="absolute top-0 end-0 opacity-20">
                             <h3 class="EudoxusSans text-white font-bold text-[26px] mt-6 leading-[32px]">Consistent
                                 gains</h3>
                             <p class="EudoxusSans2 text-white font-normal text-base mt-3">Our trades have as high as a
                                 87% win rate.</p>
-
                         </div>
+
 
 
                     </div>
@@ -198,6 +209,17 @@
 
 
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container ">
+                <div class="flex items-center flex-col justify-center">
+                    <img src="../src/img/svg/3peple.svg" alt="" class="pointer-events-none">
+                    <h2 class=" text-white EudoxusSans font-bold text-3xl leading-[51px] text-center">How This Guy Traded <br><span
+                            class="text-golden EudoxusSans font-bold text-3xl leading-[51px] text-center">$26 Into $2,700,000</span>
+                    </h2>
+
                 </div>
             </div>
         </section>

@@ -78,6 +78,7 @@
 .menu-open {
     right: 0;
 }
+
 /* Add this CSS to your stylesheet */
 .link-hover {
     text-decoration: none;
@@ -102,6 +103,7 @@
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
 .main {
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
@@ -110,4 +112,50 @@
     transform: translateY(-10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-color: white;
+}
+
+/* Container for the slick slider */
+.slick-slider {
+    width: 80%;
+    /* Adjust as needed */
+    margin: 0 auto;
+    /* Center the slider */
+}
+
+/* Add gap between slides */
+.slick-slide {
+    padding: 0 15px;
+    /* Adjust horizontal padding for spacing between slides */
+    box-sizing: border-box;
+    /* Include padding in the element's total width */
+}
+
+/* Ensure images are responsive and fit well within slides */
+.slider-image {
+    width: 100%;
+    /* Make images responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 8px;
+    /* Optional: Rounded corners for images */
+}
+
+/* Customize navigation arrows (optional) */
+.slick-prev,
+.slick-next {
+    font-size: 24px;
+    color: #000;
+    z-index: 1;
+    /* Ensure buttons are above the slides */
+}
+
+/* Customize pagination dots (optional) */
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #000;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: gold;
 }

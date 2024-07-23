@@ -75,13 +75,14 @@ function toggleMenu() {
 }
 $(document).ready(function () {
     $('.slick-slider').slick({
-        dots: true,           // Enable pagination dots
+        dots: true,
+        arrows: false,
+        // Enable pagination dots
         infinite: true,       // Loop the slides
         speed: 500,           // Speed of transition
         slidesToShow: 2,      // Number of slides to show at once
         slidesToScroll: 1,    // Number of slides to scroll at once
         centerMode: false,    // Disable center mode (if not needed)
-        prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-        nextArrow: '<button type="button" class="slick-next">Next</button>'
+        
     });
 });

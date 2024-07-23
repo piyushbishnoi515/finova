@@ -12,6 +12,9 @@ module.exports = {
           xl: "1064px",
          
         },
+        backgroundImage: {
+          'custom-gradient': 'radial-gradient(217.22% 82.21% at 50% 80%, #775407 27.96%, #BE953D 41.96%, rgba(196, 154, 66, 0.883333) 54.96%, rgba(215, 173, 80, 0.5) 71.96%, rgba(215, 173, 80, 0) 93.46%), linear-gradient(180deg, rgba(19, 17, 13, 0) 26%, #13110D 100%)',
+        },
         padding: {
           DEFAULT: "12px",
         },
@@ -35,6 +38,9 @@ module.exports = {
         white: "#FFFFFF",
         black: "#0A0A0B",
         "light-gray": "#E2DDCB",
+      },
+      backgroundImage: {
+        'custom-gradient': 'radial-gradient(217.22% 82.21% at 50% 80%, #775407 27.96%, #BE953D 41.96%, rgba(196, 154, 66, 0.883333) 54.96%, rgba(215, 173, 80, 0.5) 71.96%, rgba(215, 173, 80, 0) 93.46%), linear-gradient(180deg, rgba(19, 17, 13, 0) 26%, #13110D 100%)',
       },
     },
   },

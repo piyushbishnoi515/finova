@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>finova</title>
     <link href="./output.css" rel="stylesheet">
     <link rel="shortcut icon" href="./img/webp/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./input.css">
@@ -44,19 +45,19 @@
                     <div class="flex flex-col justify-between w-7 h-6 menu-icon z-30 relative cursor-pointer"
                         onclick="toggleMenu()">
                         <span
-                            class="flex bg-golden w-full h-1 rounded-sm md:absolute top-0 line1 duration-300 ease-linear"></span>
+                            class="flex bg-golden w-full h-1 rounded-sm absolute top-0 line1 duration-300 ease-linear"></span>
                         <span
-                            class="flex bg-golden w-full h-1 rounded-sm md:absolute top-1/2 -translate-y-1/2 line-center duration-300 ease-linear"></span>
+                            class="flex bg-golden w-full h-1 rounded-sm absolute top-1/2 -translate-y-1/2 line-center duration-300 ease-linear"></span>
                         <span
-                            class="flex bg-golden w-full h-1 rounded-sm md:absolute bottom-0 line3 duration-300 ease-linear"></span>
+                            class="flex bg-golden w-full h-1 rounded-sm absolute bottom-0 line3 duration-300 ease-linear"></span>
                     </div>
                     <ul id="menu"
-                        class="menu-list flex items-center gap-8 fixed top-0 -right-full flex-col justify-center w-1/2 min-h-screen  bg-black  duration-300 ease-linear">
+                        class="menu-list nav-heading flex items-center gap-8 fixed top-0 -right-full flex-col justify-center w-full max-w-[425px] min-h-screen  bg-black  duration-300 ease-linear">
                         <li><a href="#join"
                                 class="font-bold text-[18px] EudoxusSans text-center text-golden link-hover">Join</a>
                         </li>
                         <li><a href="#faq"
-                                class="font-bold text-[18px] EudoxusSans text-center text-golden link-hover">FAQs</a>
+                                class="font-bold nav-heading text-[18px] EudoxusSans text-center text-golden link-hover">FAQs</a>
                         </li>
 
                         <!-- <li><a href="" class=" font-bold text-[18px] EudoxusSans text-center text-golden">Join Now</a></li> -->
@@ -293,7 +294,7 @@
             <div class=" border-[1px] -mt-5 relative z-10 border-[#504225] rounded-[20px] bg-kyle pb-16">
                 <div class="container">
                     <div class="row flex flex-row flex-wrap -mx-3 mt-[64px]">
-                        <div class="col-6 w-1/2 px-3">
+                        <div class="col-6 lg:w-1/2 w-full mt-2 px-3">
                             <img src="../src/img/svg/Icons.svg" alt="">
                             <h2 class="EudoxusSans font-bold text-[35px] leading-[44px] text-[white] mt-[33px]">
                                 Meet our Head of Research,
@@ -313,7 +314,7 @@
                             </button>
 
                         </div>
-                        <div class="col-6  w-1/2 px-3">
+                        <div class="col-6  lg:w-1/2 w-full mt-2 px-3">
                             <div class="bg-gradient-to-tr from-[#E9B844] to-[#8F6202] p-1 rounded-[20px]">
                                 <img src="../src/img/webp/spex.png" alt="" class="rounded-[16px]">
                             </div>
@@ -323,10 +324,42 @@
                 </div>
             </div>
         </section>
+        <section class="bg-[#13110D]" id="join">
+            <div class="container">
+                <h2 class=" text-white EudoxusSans font-bold text-3xl leading-[51px] text-center pt-16">Choose Your Plan
+                </h2>
+                <p class="EudoxusSans2 text-center text-white font-normal mt-[13px] text-[18px] leading-[22px]">FINOVA
+                    empowers you with expert researched crypto trade signals and comprehensive courses.</p>
+                <div class="flex items-start  gap-2 justify-center mt-[23px]">
+                    <div class="flex items-center gap-2">
+                        <h2 class="EudoxusSans2  font-normal text-[12px] text-white">Monthly</h2>
+                        <div
+                            class="w-[78px] h-[32px] border-[0.93px] border-[#313338] bg-[#282724] rounded-[200px] relative cursor-pointer toggle">
+                            <span
+                                class="rounded-[50%]  w-[25px] h-[25px] bg-[linear-gradient(180deg,_#AA832F_0%,_#795302_100%)] flex absolute top-1/2 -translate-y-1/2 left-1 circle duration-300 ease-linear"></span>
+                        </div>
+                        <h2 class="EudoxusSans2 font-normal text-[12px] text-white ">Annually</h2>
+                    </div>
+                    <img src="../src/img/webp/light.png" alt="" class="w-[72px] -mt-2">
+
+                </div>
+                <div class="row flex flex-row -mx-3">
+                    <div class="col-4 w-4/12 px-3">
+                        <div class="max-w-[340px] min-h-[714px] flex flex-col items-center rounded-[30px] bg-[linear-gradient(180deg,_#FFC190_0%,_#C35A2A_100%);] ">
+                            <img src="../src/img/webp/f-img.png" alt="" class=" flex justify-center">
+                            <h2 class="EudoxusSans text-white font-bold text-[47px] text-center ">Bronze</h2>
+                            <p class="font-bold EudoxusSans text-[30px] text-white ">$34.99/ <span class="font-normal EudoxusSans text-[16px] text-white">month</span></p>
+                            <p class="font-normal EudoxusSans text-[16px] text-white">Trade Signals</p>
+                            <button class="font-bold text-[18px]">Join Now</button>
 
 
+                        </div>
+                    </div>
 
+                </div>
 
+            </div>
+        </section>
 
 
 

@@ -75,10 +75,6 @@
     background: linear-gradient(to right, var(--color-yellow-primary) var(--volume-fill), var(--color-white) var(--volume-fill));
 }
 
-.menu-open {
-    right: 0;
-}
-
 /* Add this CSS to your stylesheet */
 .link-hover {
     text-decoration: none;
@@ -193,9 +189,11 @@
     background: #AA832F !important;
     cursor: pointer !important;
 }
+
 .gradient-background {
     background: linear-gradient(327.64deg, rgba(170, 131, 47, 0.04) 0%, rgba(170, 131, 47, 0.06) 100%);
 }
+
 .gradient-button {
     background: linear-gradient(180deg, #AA832F 0%, #795302 100%);
     transition: background 0.3s ease;

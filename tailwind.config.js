@@ -23,6 +23,7 @@ module.exports = {
         'custom-gradient': 'radial-gradient(217.22% 82.21% at 50% 80%, #775407 27.96%, #BE953D 41.96%, rgba(196, 154, 66, 0.883333) 54.96%, rgba(215, 173, 80, 0.5) 71.96%, rgba(215, 173, 80, 0) 93.46%), linear-gradient(180deg, rgba(19, 17, 13, 0) 26%, #13110D 100%)',
         'kyle': "url(../src/img/webp/kyle-bg.webp)",
         'layer': "url(../src/img/webp/layer-bg.webp)",
+        'layer2': "url(../src/img/webp/bglayer-22.webp)",
       },
       fontSize: {
         xxs: "11.8px",

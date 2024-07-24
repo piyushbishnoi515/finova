@@ -110,4 +110,4 @@ btn.addEventListener("click", function () {
     circle.classList.toggle("left-auto");
     circle.classList.toggle("right-1");
 
-})
+});

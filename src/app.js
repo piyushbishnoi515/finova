@@ -111,3 +111,18 @@ btn.addEventListener("click", function () {
     circle.classList.toggle("right-1");
 
 });
+// document.addEventListener('DOMContentLoaded', function () {
+//     const accordions = document.querySelectorAll('.accordion-header');
+//     accordions.forEach(header => {
+//         header.addEventListener('click', function () {
+//             const panel = this.nextElementSibling;
+//             if (panel.style.display) {
+//                 panel.style.display = "none";
+//             } else {
+//                 panel.style.display = "flex";
+//             }
+//             this.classList.toggle('active');
+//             this.querySelector('.arrow-icon').classList.toggle('rotate-180');
+//         });
+//     });
+// });

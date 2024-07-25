@@ -111,3 +111,48 @@ btn.addEventListener("click", function () {
     circle.classList.toggle("right-1");
 
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const accordionHeadings = document.querySelectorAll(".accordion-heading");
+
+    accordionHeadings.forEach((heading) => {
+        heading.addEventListener("click", function () {
+            // Close all other accordions
+            accordionHeadings.forEach((item) => {
+                if (item !== heading) {
+                    item.classList.remove("bg-[linear-gradient(180deg,_#AA832F_0%,_#795302_100%)]");
+                    item.classList.add("bg-[#11100D");
+                    item.classList.remove("border-[]");
+                    item.classList.add("border-[#2A2825]");
+                    item.lastElementChild.classList.remove("rotate-180");
+                    item.nextElementSibling.classList.add("hidden");
+                }
+            });
+
+            // Toggle the clicked accordion
+            heading.classList.toggle("bg-[linear-gradient(180deg,_#AA832F_0%,_#795302_100%)]");
+            heading.classList.toggle("bg-[#11100D");
+            heading.lastElementChild.classList.toggle("rotate-180");
+            heading.nextElementSibling.classList.toggle("hidden");
+        });
+    });
+});
+// Get the button
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// Show the button when scrolling down 100px from the top
+window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollToTopBtn.classList.remove("hidden");
+    } else {
+        scrollToTopBtn.classList.add("hidden");
+    }
+};
+
+// Scroll to top when the button is clicked
+scrollToTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});

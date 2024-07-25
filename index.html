@@ -52,9 +52,9 @@
                             class="flex bg-golden w-full h-1 rounded-sm absolute bottom-0 line3 duration-300 ease-linear"></span>
                     </div>
                     <ul id="menu"
-                        class="menu-list nav-heading flex items-center gap-8 fixed top-0 -right-full flex-col justify-center w-full max-w-[425px] min-h-screen  bg-black  duration-300 ease-linear">
+                        class="menu-list  flex items-center gap-8 fixed top-0 -right-full flex-col justify-center w-full max-w-[425px] min-h-screen  bg-black  duration-300 ease-linear">
                         <li><a href="#join"
-                                class="font-bold text-[18px] EudoxusSans text-center text-golden link-hover">Join</a>
+                                class="font-bold nav-heading text-[18px] EudoxusSans text-center text-golden link-hover">Join</a>
                         </li>
                         <li><a href="#faq"
                                 class="font-bold nav-heading text-[18px] EudoxusSans text-center text-golden link-hover">FAQs</a>
@@ -572,18 +572,69 @@ radial-gradient(39.11%_37.65%_at_26.63%_33.13%,_rgba(255,_255,_255,_0.29)_0%,_rg
                 </div>
             </div>
         </section>
-        <section class="bg-black">
-            <div class="container">
-                <h2 class=" text-white EudoxusSans font-bold text-3xl leading-[51px] text-center pt-16">FAQs</h2>
-                <div class="accordian">
-                    <div class="accordian-heading p-[18px_0_25px_20px] max-w-[1040px] rounded-[16px]">
-                        <h2 class="font-bold text-[18px] EudoxusSans bg-[linear-gradient(180deg,_#AA832F_0%,_#795302_100%)] text-white">What is FINOVA?</h2>
+        <section class="bg-black py-5 -mt-1" id="faq">
+            <div class="container pb-[60px] mb-16">
+                <h2 class=" text-white EudoxusSans font-bold text-3xl leading-[51px] text-center pt-16 mb-16">FAQs</h2>
+                <div class="flex flex-col  justify-center gap-[22px]">
+                    <div class="accordion ">
+                        <div
+                            class="accordion-heading duration-300 ease-linear pr-6 border-[1px] border-[#2A2825] border-opacity-10 p-6 bg-[#12100D] justify-between flex items-center rounded-lg cursor-pointer">
+                            <h2 class="font-bold text-lg text-white EudoxusSans">What is FINOVA?</h2>
+                            <img src="./src/img/svg/close.svg" alt="Accordion Icon"
+                                class="relative duration-300 ease-linear">
+                        </div>
+                        <div class="accordion-content hidden duration-300 ease-linear">
+                            <p class="font-normal text-lg leading-6 text-white mt-6  flex-nowrap EudoxusSans2">
+                                FINOVA is a crypto research group offering trade signals and courses to help you achieve
+                                financial freedom.
+                            </p>
+                        </div>
                     </div>
-
+                    <div class="accordion">
+                        <div
+                            class="accordion-heading duration-300 ease-linear pr-6 border-[1px] border-[#2B2925] border-opacity-10 p-6  bg-[#11100D] justify-between flex items-center rounded-lg cursor-pointer">
+                            <h2 class="font-bold text-lg text-white EudoxusSans">How do I join?</h2>
+                            <img src="./src/img/svg/close.svg" alt="Accordion Icon"
+                                class="relative duration-300 ease-linear">
+                        </div>
+                        <div class="accordion-content hidden duration-300 ease-linear">
+                            <p class="font-normal text-lg leading-6 text-white mt-6 EudoxusSans2">
+                                FINOVA is a crypto research group offering trade signals and courses to help you achieve
+                                financial freedom.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div
+                            class="accordion-heading duration-300 ease-linear pr-6 border-[1px] border-[#2B2925] border-opacity-10 p-6  bg-[#11100D] justify-between flex items-center rounded-lg cursor-pointer">
+                            <h2 class="font-bold text-lg text-white EudoxusSans">What if I’m new to crypto trading?</h2>
+                            <img src="./src/img/svg/close.svg" alt="Accordion Icon"
+                                class="relative duration-300 ease-linear">
+                        </div>
+                        <div class="accordion-content hidden duration-300 ease-linear">
+                            <p class="font-normal text-lg leading-6 text-white mt-6 EudoxusSans2">
+                                FINOVA is a crypto research group offering trade signals and courses to help you achieve
+                                financial freedom.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div
+                            class="accordion-heading duration-300 ease-linear pr-6 border-[1px] border-[#2B2925] border-opacity-10 p-6  bg-[#11100D] justify-between flex items-center rounded-lg cursor-pointer">
+                            <h2 class="font-bold text-lg text-white EudoxusSans">Is there a guarantee?</h2>
+                            <img src="./src/img/svg/close.svg" alt="Accordion Icon"
+                                class="relative duration-300 ease-linear">
+                        </div>
+                        <div class="accordion-content hidden duration-300 ease-linear">
+                            <p class="font-normal text-lg leading-6 text-white mt-6 EudoxusSans2">
+                                FINOVA is a crypto research group offering trade signals and courses to help you achieve
+                                financial freedom.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
         <section class="bg-[#0A0A0B] -mt-1 p-1">
             <div class="container">
                 <div
@@ -614,7 +665,7 @@ radial-gradient(39.11%_37.65%_at_26.63%_33.13%,_rgba(255,_255,_255,_0.29)_0%,_rg
             </div>
             </div>
         </section>
-        <section class="bg-black relative">
+        <section class="bg-black relative -mt-1">
             <img src="./src/img/webp/layer-f-left.png" alt="" class="absolute bottom-0 start-0">
             <img src="./src/img/webp/layer-f-right.png" alt="" class="absolute bottom-0 end-0">
             <div class="container z-[1]">
@@ -659,6 +710,10 @@ radial-gradient(39.11%_37.65%_at_26.63%_33.13%,_rgba(255,_255,_255,_0.29)_0%,_rg
 
 
     </main>
+    <button id="scrollToTopBtn"
+        class="fixed bottom-5 right-5 h-[30px] w-[30px] bg-[black] text-golden  hover:shadow-[0_0_2px_2px_red]  focus:outline-none focus:ring-2 z-50 rounded-[50%]">
+        ↑
+    </button>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

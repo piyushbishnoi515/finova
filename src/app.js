@@ -99,7 +99,17 @@ $(document).ready(function () {
         slidesToShow: 2,      // Number of slides to show at once
         slidesToScroll: 1,    // Number of slides to scroll at once
         centerMode: false,    // Disable center mode (if not needed)
-
+        responsive: [
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+        ],
     });
 });
 const btn = document.querySelector(".toggle");

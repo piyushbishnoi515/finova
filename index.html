@@ -40,9 +40,10 @@
 <body>
     <main class="overflow-hidden max-w-[1920px] mx-auto">
         <section class="bg-[#AA832F] min-h-[68px] w-full">
-            <div class="container">
-                <h1 class="Eudo text-[14px] font-bold  leading-[17px] text-white text-center pt-[15px] pb-[10px]"><a href=""
-                        class="Eudo text-[14px] font-bold  leading-[17px] text-white underline">Join Gold Now</a>,
+            <div class="container relative z-[1]">
+                <h1 class="Eudo text-[14px] font-bold  leading-[17px] text-white text-center pt-[15px] pb-[10px]"><a
+                        href="" class="Eudo text-[14px] font-bold  leading-[17px] text-white underline">Join Gold
+                        Now</a>,
                     Hurry! Only 5 Spots Available</h1>
                 <div class="volume-display flex gap-2 items-center justify-center pb-[15px]">
                     <p> <span id="volumeValue" class=" text-white">100</span></p>
@@ -63,11 +64,11 @@
                     <div class="flex flex-col justify-between w-7 h-6 menu-icon z-30 relative cursor-pointer"
                         onclick="toggleMenu()">
                         <span
-                            class="flex bg-golden w-full h-1 rounded-sm absolute top-0 line1 duration-300 ease-linear"></span>
+                            class="flex bg-white w-full h-1 rounded-sm absolute top-0 line1 duration-300 ease-linear"></span>
                         <span
-                            class="flex bg-golden w-full h-1 rounded-sm absolute top-1/2 -translate-y-1/2 line-center duration-300 ease-linear"></span>
+                            class="flex bg-white w-full h-1 rounded-sm absolute top-1/2 -translate-y-1/2 line-center duration-300 ease-linear"></span>
                         <span
-                            class="flex bg-golden w-full h-1 rounded-sm absolute bottom-0 line3 duration-300 ease-linear"></span>
+                            class="flex bg-white w-full h-1 rounded-sm absolute bottom-0 line3 duration-300 ease-linear"></span>
                     </div>
                     <ul id="menu"
                         class="menu-list  flex items-center gap-8 fixed top-0 -right-full flex-col justify-center w-full max-w-[425px] min-h-screen  bg-black  duration-300 ease-linear">
@@ -98,65 +99,116 @@
                             Signals,
                             Research & Courses</p>
                         <img src="../src/img/svg/3peple.svg" alt="" class="w-1/2 mt-[33px]">
-                        <div class=" flex flex-col items-center justify-start">
-                            <button
-                                class=" text-white font-bold leading-[22px] text-nowrap  p-[16px_120px_16px_120px] rounded-[200px] mt-[35px] EudoxusSans bg-golden gradient-button ">Join
-                                Now</button>
+                        <div class=" flex flex-col items-center justify-start ">
+                            <div class="hidden lg:block">
+                                <button
+                                    class=" text-white font-bold leading-[22px] text-nowrap  p-[16px_120px_16px_120px] rounded-[200px] mt-[35px] EudoxusSans bg-golden gradient-button  hidden lg:block">Join
+                                    Now</button>
+                                <p
+                                    class="font-normal EudoxusSans text-xsm leading-[16px] text-white mt-3 justify-center">
+                                    Hurry!
+                                    Only
+                                    5 Spots
+                                    Available</p>
+
+                                <div class="flex flex-row items-center gap-5 mt-4">
+                                    <div class="flex flex-col items-center">
+                                        <div id="days"
+                                            class=" w-[64px] grid place-items-center   h-[62px] rounded-md border border-golden text-golden font-normal text-sm font-Eudo">
+                                            <p class="font-normal text-sm text-golden">23</p>
+                                        </div>
+                                        <p class="font-normal text-sm text-white mt-1">Days</p>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <div id="hours"
+                                            class=" w-[64px] grid place-items-center   h-[62px] rounded-md border border-golden text-golden font-normal text-sm font-Eudo">
+                                            <p class="font-normal text-sm text-golden">12</p>
+                                        </div>
+                                        <p class="font-normal text-sm text-white mt-1">Hours</p>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <div id="minutes"
+                                            class=" w-[64px] grid place-items-center   h-[62px] rounded-md border border-golden text-golden font-normal text-sm font-Eudo">
+                                            <p class="font-normal text-sm text-golden">23</p>
+                                        </div>
+                                        <p class="font-normal text-sm text-white mt-1">Mins</p>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <div id="seconds"
+                                            class=" w-[64px] grid place-items-center   h-[62px] rounded-md border border-golden text-golden font-normal text-sm font-Eudo">
+                                            <p class="font-normal text-sm text-golden">45</p>
+                                        </div>
+                                        <p class="font-normal text-sm text-white mt-1">Secs</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-6 lg:w-1/2 w-full px-3 flex flex-col items-center">
+                        <img src="./src/img/webp/firstcol6-.webp" alt="" class="md:w-7/12 lg:w-auto">
+                        <button
+                            class=" text-white font-bold leading-[22px] text-nowrap  p-[16px_120px_16px_120px] rounded-[200px] mt-[19px] EudoxusSans bg-golden gradient-button lg:hidden">Join
+                            Now</button>
+                        <div class="flex items-center flex-col lg:hidden ">
                             <p class="font-normal EudoxusSans text-xsm leading-[16px] text-white mt-3 justify-center">
                                 Hurry!
                                 Only
                                 5 Spots
                                 Available</p>
+
+                            <div class="flex flex-row items-center gap-5 mt-4 mb-[92px]">
+                                <div class="flex flex-col items-center">
+                                    <div id="days"
+                                        class=" w-[64px] grid place-items-center   h-[62px] rounded-md border border-golden text-golden font-normal text-sm font-Eudo">
+                                        <p class="font-normal text-sm text-golden">23</p>
+                                    </div>
+                                    <p class="font-normal text-sm text-white mt-1">Days</p>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div id="hours"
+                                        class=" w-[64px] grid place-items-center   h-[62px] rounded-md border border-golden text-golden font-normal text-sm font-Eudo">
+                                        <p class="font-normal text-sm text-golden">12</p>
+                                    </div>
+                                    <p class="font-normal text-sm text-white mt-1">Hours</p>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div id="minutes"
+                                        class=" w-[64px] grid place-items-center   h-[62px] rounded-md border border-golden text-golden font-normal text-sm font-Eudo">
+                                        <p class="font-normal text-sm text-golden">23</p>
+                                    </div>
+                                    <p class="font-normal text-sm text-white mt-1">Mins</p>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div id="seconds"
+                                        class=" w-[64px] grid place-items-center   h-[62px] rounded-md border border-golden text-golden font-normal text-sm font-Eudo">
+                                        <p class="font-normal text-sm text-golden">45</p>
+                                    </div>
+                                    <p class="font-normal text-sm text-white mt-1">Secs</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="flex flex-row items-center gap-5 mt-4">
-                            <div class="flex flex-col items-center">
-                                <div id="days"
-                                    class=" w-[64px] grid place-items-center   h-[62px] rounded-md border border-golden text-golden font-normal text-sm font-Eudo">
-                                    <p class="font-normal text-sm text-golden">23</p>
-                                </div>
-                                <p class="font-normal text-sm text-white mt-1">Days</p>
-                            </div>
-                            <div class="flex flex-col items-center">
-                                <div id="hours"
-                                    class=" w-[64px] grid place-items-center   h-[62px] rounded-md border border-golden text-golden font-normal text-sm font-Eudo">
-                                    <p class="font-normal text-sm text-golden">12</p>
-                                </div>
-                                <p class="font-normal text-sm text-white mt-1">Hours</p>
-                            </div>
-                            <div class="flex flex-col items-center">
-                                <div id="minutes"
-                                    class=" w-[64px] grid place-items-center   h-[62px] rounded-md border border-golden text-golden font-normal text-sm font-Eudo">
-                                    <p class="font-normal text-sm text-golden">23</p>
-                                </div>
-                                <p class="font-normal text-sm text-white mt-1">Mins</p>
-                            </div>
-                            <div class="flex flex-col items-center">
-                                <div id="seconds"
-                                    class=" w-[64px] grid place-items-center   h-[62px] rounded-md border border-golden text-golden font-normal text-sm font-Eudo">
-                                    <p class="font-normal text-sm text-golden">45</p>
-                                </div>
-                                <p class="font-normal text-sm text-white mt-1">Secs</p>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <div class="col-6 lg:w-1/2 w-full px-3 flex flex-col items-center">
-                        <img src="./src/img/webp/firstcol6-.webp" alt="" class="md:w-7/12 lg:w-auto">
-
                     </div>
 
                 </div>
+
+            </div>
             </div>
         </section>
         <section class="bg-black -mt-1">
-            <div class="container">
-                <h2 class=" text-white EudoxusSans font-bold md:text-3xl text-[35px] leading-[51px] text-center xl:pt-16">Why
-                    Choose <span
-                        class="text-golden EudoxusSans font-bold text-3xl leading-[51px] text-center">FINOVA?</span>
-                </h2>
-                <p class="EudoxusSans2 text-center text-white font-normal mt-[13px] text-[18px] leading-[22px]">FINOVA
-                    empowers you with expert researched crypto trade signals and comprehensive courses.</p>
+            <div class="container relative z-[1]">
+                <div class="flex flex-col items-center">
+                    <h2
+                        class=" text-white EudoxusSans font-bold md:text-3xl text-[35px] leading-[51px] lg:text-center lg:pt-16  text-center  pt-8 max-w-[224px] md:max-w-full">
+                        Why Choose <span
+                            class="text-golden EudoxusSans font-bold text-3xl leading-[51px] text-center">FINOVA?</span>
+                    </h2>
+                    <p
+                        class="EudoxusSans2 text-center text-white font-normal mt-[13px] text-[18px] leading-[22px] max-w-[390px] md:max-w-full">
+                        FINOVA
+                        empowers you with expert researched crypto trade signals and comprehensive courses.</p>
+                </div>
                 <div class="row flex flex-row flex-wrap -mx-3 mt-[64px]">
                     <div class="col-6  lg:w-1/2 w-full px-3 mt-6">
                         <div
@@ -205,7 +257,7 @@
                                 <h2 class="EudoxusSans2  text-white opacity-20 font-bold text-[55px] ">03</h2>
                             </div>
                             <img src="./src/img/webp/circle.webp" alt="" class="absolute top-0 end-0 opacity-20">
-                            <h3 class="EudoxusSans text-white font-bold text-[26px] max-w-[299px] mt-6 leading-[32px]">
+                            <h3 class="EudoxusSans text-white font-bold text-[25px] max-w-[339px]  mt-6 leading-[32px]">
                                 Zero to full time trader with
                                 full time traders course</h3>
                             <p class="EudoxusSans2 text-white font-normal text-base mt-3 max-w-[308px]">Lorem ipsum
@@ -243,7 +295,7 @@
         </section>
         <!-- --slider- -->
         <section class="pt-[131px] -mt-1 bg-black relative bg-layer bg-cover bg-no-repeat ">
-            <div class="container">
+            <div class="container relative z-[1]">
                 <div class="flex items-center flex-col justify-center">
                     <img src="../src/img/svg/3peple.svg" alt="" class="pointer-events-none ">
                     <h2
@@ -257,7 +309,7 @@
                     <h3 class="EudoxusSans font-normal text-[18px] text-center mt-[13px] text-white">You Can, Too....
                     </h3>
                     <iframe
-                        class="mt-[64px] w-full h-full md:max-w-[844px] max-w-[390px] md:min-h-[474.62px] min-h-[219.38px]"
+                        class="mt-[64px] w-full h-full md:max-w-[844px] max-w-[390px] md:min-h-[474.62px] min-h-[219.38px] rounded-[20px]"
                         src="https://www.youtube.com/embed/olo3YPpGwA8"
                         title="How This Guy Traded $26 Into $2,700,000 (You Can, Too)" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -286,9 +338,9 @@
                         Available</p>
                 </div>
                 <div class="flex flex-row items-center gap-5 mt-4 justify-center pb-[64px]">
-                    <div class="flex flex-col items-center">
+                    <div class="flex flex-col items-center ">
                         <div id="days"
-                            class=" w-[64px] grid place-items-center   h-[62px] rounded-md border border-golden text-golden font-normal text-sm font-Eudo">
+                            class=" w-[64px] grid place-items-center   h-[62px] rounded-md border border-golden text-golden font-normal text-sm font-Eudo ">
                             <p class="font-normal text-sm text-golden">23</p>
                         </div>
                         <p class="font-normal text-sm text-white mt-1">Days</p>
@@ -317,7 +369,7 @@
                 </div>
             </div>
             <div class=" border-[1px] -mt-5 relative z-10 border-[#504225] rounded-[20px] bg-kyle pb-16">
-                <div class="container">
+                <div class="container relative z-[1]">
                     <div class="row flex flex-row flex-wrap -mx-3 mt-[64px]">
                         <div class="col-6 lg:w-1/2 mt-3 w-full flex flex-col items-center lg:items-start  px-3">
                             <img src="../src/img/svg/Icons.svg" alt="">
@@ -336,7 +388,7 @@
                                 dolore magna aliqua.
                             </p>
                             <button
-                                class="EudoxusSans text-[18px] font-bold leading-[22px] p-[16px_59px_16px_59px] text-white mt-[33px] rounded-[200px] gradient-button">
+                                class="EudoxusSans text-[18px] font-bold leading-[22px] p-[16px_59px_16px_59px] text-white mt-[33px] rounded-[200px] gradient-button lg:block hidden  ">
                                 Learn More About Kylie
                             </button>
 
@@ -344,17 +396,21 @@
                         <div class="col-6  lg:w-1/2 mt-3 w-full  px-3 flex justify-center ">
                             <div class="bg-gradient-to-tr from-[#E9B844] to-[#8F6202]
                              p-1 rounded-[20px] md:max-w-[578px] max-w-[390px]">
-                                <img src="./src/img/webp/spex.webp" alt=""
-                                    class="rounded-[16px] w-full  h-full ">
+                                <img src="./src/img/webp/spex.webp" alt="" class="rounded-[16px] w-full  h-full ">
                             </div>
 
+
                         </div>
+                        <button
+                            class="EudoxusSans text-[18px] font-bold leading-[22px] p-[16px_59px_16px_59px] text-white mt-[33px] rounded-[200px] gradient-button lg:hidden block mx-auto">
+                            Learn More About Kylie
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
         <section class="bg-[#13110D] -mt-1" id="join">
-            <div class="container">
+            <div class="container relative z-[1]">
                 <h2 class=" text-white EudoxusSans font-bold lg:text-3xl text-[35px] leading-[51px] text-center pt-16">
                     Choose Your Plan
                 </h2>
@@ -376,7 +432,7 @@
                 <div class="row flex flex-row -mx-3 mt-16 overflow-x-scroll xl:overflow-x-visible gap-3 pb-[122px]">
                     <div class="col-4 w-[340px] lg:w-4/12 px-3">
                         <div
-                            class=" w-[340px] min-h-[714px] flex flex-col items-center rounded-[30px] bg-[linear-gradient(180deg,_#FFC190_0%,_#C35A2A_100%);] transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg pt-[30px] h-full">
+                            class=" w-[340px] lg:min-h-[714px] min-h-[649px] flex flex-col items-center rounded-[30px] bg-[linear-gradient(180deg,_#FFC190_0%,_#C35A2A_100%);] transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg pt-[30px] h-full">
                             <img src="./src/img/webp/f-img.webp" alt="" class="flex justify-center">
                             <h2 class="EudoxusSans text-white font-bold text-[47px] text-center">Bronze</h2>
                             <p class="font-bold EudoxusSans text-[30px] text-white">$34.99/ <span
@@ -501,7 +557,7 @@ radial-gradient(39.11%_37.65%_at_26.63%_33.13%,_rgba(255,_255,_255,_0.29)_0%,_rg
             </div>
         </section>
         <section class=" bg-black -mt-2 bg-layer2 bg-cover bg-no-repeat relative z-10">
-            <div class="container">
+            <div class="container relative z-[1]">
                 <div class="flex justify-center  items-center flex-col">
                     <h2
                         class=" text-white EudoxusSans font-bold lg:text-3xl text-[35px] leading-[51px] text-center pt-16">
@@ -558,7 +614,7 @@ radial-gradient(39.11%_37.65%_at_26.63%_33.13%,_rgba(255,_255,_255,_0.29)_0%,_rg
             </div>
         </section>
         <section class="bg-[#0A0A0B] -mt-1">
-            <div class="container">
+            <div class="container relative z-[1]">
                 <div class="flex flex-col justify-center items-center pt-16">
                     <h2
                         class="text-golden font-bold lg:text-3xl text-[35px] leading-[51px] EudoxusSans text-center lg:text-left justify-center">
@@ -569,20 +625,28 @@ radial-gradient(39.11%_37.65%_at_26.63%_33.13%,_rgba(255,_255,_255,_0.29)_0%,_rg
                     <p
                         class="font-normal EudoxusSans2 text-white text-lg leading-[22px] text-center lg:text-left mt-[13px]">
                         Be a part of our thriving community and start your journey to financial freedom today.</p>
-                    <img src="../src/img/svg/3peple.svg" alt="" class="md:max-w[219px] max-w-[123px] md:pt-16">
-                    <div class=" flex flex-col items-center justify-start ">
+                    <!-- <img src="../src/img/svg/3peple.svg" alt="" class="md:max-w[219px] max-w-[123px] md:pt-16"> -->
+                    <div class="flex items-center flex-col md:flex-row gap-[5px] lg:mt-16 mt-6">
+                        <img src="./src/img/svg/3member.svg" alt="">
+                        <div class="flex items-center flex-col  gap-[5px]">
+                            <h2 class="text-white EudoxusSans2 font-normal text-base ">+3K reviews</h2>
+                            <img src="./src/img/svg/5star.svg" alt="">
+
+                        </div>
+                    </div>
+                    <div class=" flex flex-col items-center justify-start mt-6 ">
                         <button
-                            class=" text-white font-bold leading-[22px] text-nowrap  p-[16px_120px_16px_120px] rounded-[200px] mt-[35px] EudoxusSans bg-golden gradient-button mb-16">Join
+                            class=" text-white font-bold leading-[22px] text-nowrap  p-[16px_120px_16px_120px] rounded-[200px]  EudoxusSans bg-golden gradient-button mb-16">Join
                             Now</button>
                     </div>
                 </div>
-                <div class="row flex md:flex-row -mx-3 mt-[38px] pb-8 flex-wrap flex-col-reverse ">
+                <div class="row flex md:flex-row -mx-3 mt-[38px] pb-8 flex-wrap ">
                     <div class="col-6 lg:w-1/2 w-full px-3 mt-[20px] flex justify-center lg:justify-start">
                         <div class="flex items-center justify-center lg:items-start  flex-col">
                             <h2
-                                class="text-golden font-bold text-3xl leading-[51px] EudoxusSans text-center justify-center lg:max-w-[221px]">
+                                class="text-golden font-bold text-[40px]  leading-[51px] EudoxusSans text-center justify-center lg:max-w-[221px]">
                                 Risk-Free <span
-                                    class="text-white font-bold text-3xl leading-[51px] EudoxusSans text-center  md:text-start lg:max-w-[221px]">
+                                    class="text-white font-bold text-[40px] leading-[51px] EudoxusSans text-center  md:text-start lg:max-w-[221px]">
                                     Guarantee</span>
                             </h2>
                             <p
@@ -591,7 +655,7 @@ radial-gradient(39.11%_37.65%_at_26.63%_33.13%,_rgba(255,_255,_255,_0.29)_0%,_rg
                                 know,
                                 and we’ll refund your fee.</p>
                             <button
-                                class=" text-white font-bold leading-[22px] text-nowrap  p-[16px_120px_16px_120px] rounded-[200px] mt-[35px] EudoxusSans bg-golden gradient-button ">Join
+                                class=" text-white font-bold leading-[22px] text-nowrap  p-[16px_120px_16px_120px] rounded-[200px] mt-[35px] EudoxusSans bg-golden gradient-button hidden lg:block ">Join
                                 Risk-Free</button>
                         </div>
                     </div>
@@ -602,6 +666,9 @@ radial-gradient(39.11%_37.65%_at_26.63%_33.13%,_rgba(255,_255,_255,_0.29)_0%,_rg
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                         </iframe>
                     </div>
+                    <button
+                        class=" text-white font-bold leading-[22px] text-nowrap  p-[16px_120px_16px_120px] rounded-[200px] mt-[35px] EudoxusSans bg-golden gradient-button md:hidden block mx-auto">Join
+                        Risk-Free</button>
 
                 </div>
             </div>
@@ -610,7 +677,7 @@ radial-gradient(39.11%_37.65%_at_26.63%_33.13%,_rgba(255,_255,_255,_0.29)_0%,_rg
         <section class="bg-black py-5 -mt-1 relative" id="faq">
             <img src="./src/img/webp/left-circle.webp" alt="" class="absolute top-0 start-0">
             <img src="./src/img/webp/right-circle.webp" alt="" class="absolute top-0 end-0">
-            <div class="container pb-[60px] mb-16">
+            <div class="container pb-[60px] mb-16 relative z-[1]">
                 <h2 class=" text-white EudoxusSans font-bold text-3xl leading-[51px] text-center pt-16 mb-16">FAQs</h2>
                 <div class="flex flex-col  justify-center gap-[22px]">
                     <div class="accordion ">
@@ -640,10 +707,12 @@ radial-gradient(39.11%_37.65%_at_26.63%_33.13%,_rgba(255,_255,_255,_0.29)_0%,_rg
                             class="accordion-heading duration-300 ease-linear pr-6 border-[1px] border-[#2B2925] border-opacity-10 p-6  bg-[#11100D] justify-between flex items-center rounded-lg cursor-pointer">
                             <h2 class="font-bold text-lg text-white EudoxusSans">How do I join?</h2>
                             <span class=" stroke-[#AA832F]  duration-300 ease-linear">
-                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13 0.988281L7 6.98828L1 0.988281" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 0.988281L7 6.98828L1 0.988281" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-                            
+
                             </span>
                         </div>
                         <div class="accordion-content hidden duration-300 ease-linear">
@@ -658,10 +727,12 @@ radial-gradient(39.11%_37.65%_at_26.63%_33.13%,_rgba(255,_255,_255,_0.29)_0%,_rg
                             class="accordion-heading duration-300 ease-linear pr-6 border-[1px] border-[#2B2925] border-opacity-10 p-6  bg-[#11100D] justify-between flex items-center rounded-lg cursor-pointer">
                             <h2 class="font-bold text-lg text-white EudoxusSans">What if I’m new to crypto trading?</h2>
                             <span class=" stroke-[#AA832F]  duration-300 ease-linear">
-                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13 0.988281L7 6.98828L1 0.988281" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 0.988281L7 6.98828L1 0.988281" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-                            
+
                             </span>
                         </div>
                         <div class="accordion-content hidden duration-300 ease-linear">
@@ -676,10 +747,12 @@ radial-gradient(39.11%_37.65%_at_26.63%_33.13%,_rgba(255,_255,_255,_0.29)_0%,_rg
                             class="accordion-heading duration-300 ease-linear pr-6 border-[1px] border-[#2B2925] border-opacity-10 p-6  bg-[#11100D] justify-between flex items-center rounded-lg cursor-pointer">
                             <h2 class="font-bold text-lg text-white EudoxusSans">Is there a guarantee?</h2>
                             <span class=" stroke-[#AA832F]  duration-300 ease-linear">
-                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13 0.988281L7 6.98828L1 0.988281" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 0.988281L7 6.98828L1 0.988281" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-                            
+
                             </span>
                         </div>
                         <div class="accordion-content hidden duration-300 ease-linear">
@@ -693,19 +766,19 @@ radial-gradient(39.11%_37.65%_at_26.63%_33.13%,_rgba(255,_255,_255,_0.29)_0%,_rg
             </div>
         </section>
         <section class="bg-[#0A0A0B] -mt-1 p-1">
-            <div class="container">
+            <div class="container relative z-[1] flex justify-center">
                 <div
-                    class="row p-[10px] flex-wrap -mx-3 flex flex-row bg-[radial-gradient(110.97%_56.01%_at_50%_50%,_#7D5706_0%,_#A67F2C_65.95%,_#E7B549_93.45%)] max-w-[1040px]  lg:p-[30px_202px_15px_202px] rounded-[30px] mt-16 pb-16 ">
+                    class="row p-[10px] flex-wrap -mx-3 flex flex-row bg-[radial-gradient(110.97%_56.01%_at_50%_50%,_#7D5706_0%,_#A67F2C_65.95%,_#E7B549_93.45%)] max-w-[1040px]  lg:p-[30px_202px_15px_202px] rounded-[30px] mt-16 pb-16 w-full ">
                     <div class="col-6 md:w-1/2 w-full px-3 mt-1 justify-center flex">
-                        <img src="./src/img/webp/rocket-new.webp" alt="" class="">
+                        <img src="./src/img/webp/rocket-new.webp" alt="" class="mt-[30px]">
                     </div>
                     <div class="col-6 md:w-1/2 w-full px-3 mt-1  flex items-center justify-center">
                         <div>
                             <h2
-                                class=" EudoxusSans font-bold md:text-[41px] text-[35px] text-center text-white max-w-[309px] text-nowrap">
+                                class=" EudoxusSans font-bold md:text-[41px] text-[35px]  text-white max-w-[309px] text-nowrap text-center">
                                 Ready to
                                 Start?</h2>
-                            <p class=" EudoxusSans2 font-normal text-[18px] text-white max-w-[320px] mt-[33px]">Join
+                            <p class=" EudoxusSans2 font-normal text-[18px] text-white max-w-[320px] mt-[33px] text-center">Join
                                 FINOVA today and take
                                 the
                                 first step towards financial
@@ -727,7 +800,7 @@ radial-gradient(39.11%_37.65%_at_26.63%_33.13%,_rgba(255,_255,_255,_0.29)_0%,_rg
         <section class="bg-black relative -mt-1">
             <img src="./src/img/webp/layer-f-left.webp" alt="" class="absolute bottom-0 start-0">
             <img src="./src/img/webp/layer-f-right.webp" alt="" class="absolute bottom-0 end-0">
-            <div class="container z-[1]">
+            <div class="container relative z-[1]">
                 <div class="flex flex-col justify-center items-center pt-[84px]">
                     <img src="./src/img/svg/navlogo.svg" alt="" class="">
                     <form action=""
@@ -748,7 +821,7 @@ radial-gradient(39.11%_37.65%_at_26.63%_33.13%,_rgba(255,_255,_255,_0.29)_0%,_rg
                         <a href="https://www.youtube.com/" target="_blank"><img src="./src/img/svg/youtub.svg"
                                 alt=""></a>
                     </div>
-                    <div class="flex items-center justify-between w-full gap-3 mt-16 mb-16 flex-wrap">
+                    <div class="flex items-center justify-between w-full gap-3 mt-16 mb-16 flex-col md:flex-row">
                         <a href="" class="EudoxusSans2 font-normal text-[14px] text-white w-fit">© 2024 Finova. All
                             right
                             reserved.</a>

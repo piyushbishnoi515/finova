@@ -143,6 +143,8 @@ document.addEventListener('DOMContentLoaded', () => {
             heading.classList.toggle("bg-[linear-gradient(180deg,_#AA832F_0%,_#795302_100%)]");
             heading.classList.toggle("bg-[#11100D");
             heading.lastElementChild.classList.toggle("rotate-180");
+            heading.lastElementChild.classList.toggle("stroke-white");
+            heading.lastElementChild.classList.toggle("stroke-[#AA832F]");
             heading.nextElementSibling.classList.toggle("hidden");
         });
     });

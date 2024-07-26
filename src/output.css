@@ -768,6 +768,18 @@ video {
   margin-top: 30px;
 }
 
+.mt-\[\] {
+  margin-top: ;
+}
+
+.mt-\[70px\] {
+  margin-top: 70px;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1472,6 +1484,14 @@ video {
   padding-top: 84px;
 }
 
+.pb-\[px\] {
+  padding-bottom: px;
+}
+
+.pb-\[7px\] {
+  padding-bottom: 7px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2059,5 +2079,13 @@ video {
 
   .xl\:pt-11 {
     padding-top: 2.75rem;
+  }
+
+  .xl\:pt-\[\] {
+    padding-top: ;
+  }
+
+  .xl\:pt-\[22px\] {
+    padding-top: 22px;
   }
 }

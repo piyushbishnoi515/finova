@@ -21,7 +21,6 @@ function startCountdown(targetDate) {
         const distance = targetDate - now;
 
         if (distance < 0) {
-            // Handle countdown end
             document.getElementById('days').innerHTML = '0';
             document.getElementById('hours').innerHTML = '0';
             document.getElementById('minutes').innerHTML = '0';
@@ -40,15 +39,9 @@ function startCountdown(targetDate) {
         document.getElementById('minutes').innerHTML = minutes;
         document.getElementById('seconds').innerHTML = seconds;
     }
-
-    // Update countdown every 1 second
     const timerInterval = setInterval(updateCountdown, 1000);
-
-    // Initial call
     updateCountdown();
 }
-
-// Set target date for the countdown (format: YYYY-MM-DD HH:MM:SS)
 const targetDate = new Date('2024-12-31T23:59:59');
 startCountdown(targetDate);
 let menulist = document.querySelector(".menu-list");
@@ -93,12 +86,11 @@ $(document).ready(function () {
     $('.slick-slider').slick({
         dots: true,
         arrows: false,
-        // Enable pagination dots
-        infinite: true,       // Loop the slides
-        speed: 500,           // Speed of transition
-        slidesToShow: 2,      // Number of slides to show at once
-        slidesToScroll: 1,    // Number of slides to scroll at once
-        centerMode: false,    // Disable center mode (if not needed)
+        infinite: true,       
+        speed: 500,        
+        slidesToShow: 2,   
+        slidesToScroll: 1,   
+        centerMode: false, 
         responsive: [
             {
                 breakpoint: 640,
@@ -127,7 +119,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     accordionHeadings.forEach((heading) => {
         heading.addEventListener("click", function () {
-            // Close all other accordions
             accordionHeadings.forEach((item) => {
                 if (item !== heading) {
                     item.classList.remove("bg-[linear-gradient(180deg,_#AA832F_0%,_#795302_100%)]");
@@ -138,8 +129,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     item.nextElementSibling.classList.add("hidden");
                 }
             });
-
-            // Toggle the clicked accordion
             heading.classList.toggle("bg-[linear-gradient(180deg,_#AA832F_0%,_#795302_100%)]");
             heading.classList.toggle("bg-[#11100D");
             heading.lastElementChild.classList.toggle("rotate-180");
@@ -149,10 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-// Get the button
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-// Show the button when scrolling down 100px from the top
 window.onscroll = function () {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         scrollToTopBtn.classList.remove("hidden");
@@ -160,8 +146,6 @@ window.onscroll = function () {
         scrollToTopBtn.classList.add("hidden");
     }
 };
-
-// Scroll to top when the button is clicked
 scrollToTopBtn.addEventListener("click", function () {
     window.scrollTo({
         top: 0,
@@ -174,18 +158,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     links.forEach(link => {
         link.addEventListener('click', function (event) {
-            // Prevent default anchor behavior
             event.preventDefault();
-
-            // Get the target element
             const targetId = this.getAttribute('href').substring(1);
             const targetElement = document.getElementById(targetId);
-
-            // Scroll to the target element
             targetElement.scrollIntoView({ behavior: 'smooth' });
-
-            // Optionally, hide the menu after clicking a link
-            // menu.classList.add('hidden');
         });
     });
 });

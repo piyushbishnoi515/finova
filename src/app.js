@@ -168,3 +168,24 @@ scrollToTopBtn.addEventListener("click", function () {
         behavior: "smooth"
     });
 });
+document.addEventListener('DOMContentLoaded', function () {
+    const menu = document.getElementById('menu');
+    const links = menu.querySelectorAll('a');
+
+    links.forEach(link => {
+        link.addEventListener('click', function (event) {
+            // Prevent default anchor behavior
+            event.preventDefault();
+
+            // Get the target element
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            // Scroll to the target element
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+
+            // Optionally, hide the menu after clicking a link
+            // menu.classList.add('hidden');
+        });
+    });
+});
